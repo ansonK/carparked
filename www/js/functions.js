@@ -61,6 +61,7 @@ function initApplication()
       'pageshow',
       function()
       {
+         return true;
          var requestType = urlParam('requestType');
          var positionIndex = urlParam('index');
          var geolocationOptions = {

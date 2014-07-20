@@ -26,6 +26,12 @@ dl.informations dt
   padding: 1em 0;
 }
 
+.ui-header .ui-btn-left {
+  position: static;
+  float: left;
+  margin-left: 1em;
+}
+
 .ui-btn {
   margin: 2em 0;
 }
