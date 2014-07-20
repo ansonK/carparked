@@ -1,12 +1,18 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.phonegap.helloworld" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget xmlns       = "http://www.w3.org/ns/widgets"
+    xmlns:gap       = "http://phonegap.com/ns/1.0"
+    xmlns:android   = "http://schemas.android.com/apk/res/android"
+    id              = "com.ansonkelly.carparked"
+    version         = "1.0.0">
+
     <name>Carparked</name>
     <description>
         App that uses GPS to track where your car is parked. Based off http://www.sitepoint.com/build-a-location-based-mobile-app-with-html5-and-javascript-part-1/
     </description>
-    <author email="ansonkelly@gmail.com" href="http://phonegap.com">
+    <author email="ansonkelly@gmail.com" href="http://github.com/ansonK/carparked">
         Anson Kelly
     </author>
+
     <preference name="permissions" value="none" />
     <preference name="phonegap-version" value="3.5.0" />
     <preference name="orientation" value="default" />
@@ -23,7 +29,8 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-    <gap:plugin name="org.apache.cordova.battery-status" />
+    
+<!--     <gap:plugin name="org.apache.cordova.battery-status" />
     <gap:plugin name="org.apache.cordova.camera" />
     <gap:plugin name="org.apache.cordova.media-capture" />
     <gap:plugin name="org.apache.cordova.console" />
@@ -40,7 +47,7 @@
     <gap:plugin name="org.apache.cordova.media" />
     <gap:plugin name="org.apache.cordova.network-information" />
     <gap:plugin name="org.apache.cordova.splashscreen" />
-    <gap:plugin name="org.apache.cordova.vibration" />
+    <gap:plugin name="org.apache.cordova.vibration" /> -->
 
     <icon src="icon.png" gap:role="default" />
 
