@@ -22,6 +22,22 @@ dl.informations dt
    height: 600px;
 }
 
+.ui-header {
+  padding: 1em 0;
+}
+
+.ui-btn {
+  margin: 2em 0;
+}
+
 .ui-btn-inner {
   padding: 2em 20px;
+}
+
+.ui-listview-filter .ui-input-search {
+  margin: 2em 0;
+}
+
+.ui-listview-filter .ui-input-search .ui-input-text {
+  padding: 1em;
 }

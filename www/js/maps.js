@@ -10,10 +10,14 @@ Map.displayMap = function(userPosition, carPosition)
    var userLatLng = null;
    var carLatLng = null;
 
-   if (userPosition != null)
+   if (userPosition != null) {
       userLatLng = new google.maps.LatLng(userPosition.coords.latitude, userPosition.coords.longitude);
-   if (carPosition != null)
+      document.getElementById('user-position').text = userPosition.coords.latitude +', ' + userPosition.coords.longitude;
+   }
+   if (carPosition != null) {
       carLatLng = new google.maps.LatLng(carPosition.position.latitude, carPosition.position.longitude);
+      document.getElementById('car-position').text = carPosition.coords.latitude +', ' + carPosition.coords.longitude;
+   }
 
    var options = {
       zoom: 20,

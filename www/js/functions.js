@@ -64,8 +64,8 @@ function initApplication()
          var requestType = urlParam('requestType');
          var positionIndex = urlParam('index');
          var geolocationOptions = {
-            timeout: 150 * 1000, // 15 seconds
-            maximumAge: 10 * 1000, // 10 seconds
+            timeout: 45 * 1000, // 45 seconds
+            maximumAge: 60 * 1000, // 60 seconds
             enableHighAccuracy: true
          };
          var position = new Position();
