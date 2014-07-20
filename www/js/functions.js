@@ -56,12 +56,19 @@ function initApplication()
          return false;
       }
    });
+
+   $(document).on('swipeleft', function(event){
+      // alert('Swipe: ', event.type);
+      $.mobile.changePage('index.html');
+
+   });
+
    $(document).on('pagebeforecreate orientationchange', updateIcons);
    $('#map-page').live(
       'pageshow',
       function()
       {
-         return true;
+
          var requestType = urlParam('requestType');
          var positionIndex = urlParam('index');
          var geolocationOptions = {
